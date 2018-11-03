@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>快速上手 layer，新人必看</title>
+
+  <link rel="stylesheet" href="//res.layui.com/layui/src/css/layui.css" media="all">
+  <link rel="stylesheet" href="//res.layui.com/static/css/global.css" media="all">
+  <link rel="stylesheet" href="//res.layui.com/static/css/independents.css" media="all">
+
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+  <script src="layer/layer.js?v=3111"></script>
+
+</head>
+<body>
+<div id="tong" class="hide" style="display: none" ><img src="111.jpg"></div> 
+
+
+
+
+  <script type="text/javascript">
+$(document).ready(function(){
+  $("#tes2").click(function(){
+   layer.open({
+  type: 1,
+  title: false,
+  closeBtn: 0,
+  area: '260px',
+  skin: 'layui-layer-nobg', //没有背景色
+  shadeClose: true,
+  content: $('#tong')
+});
+  });
+});
+  	//弹出一个页面层
+//   $('#tes2').click( function(){
+//   		alert(22);
+// layer.open({
+//   type: 1,
+//   title: false,
+//   closeBtn: 0,
+//   area: '260px',
+//   skin: 'layui-layer-nobg', //没有背景色
+//   shadeClose: true,
+//   content: $('#tong')
+// });
+//   });
+
+  </script>
+  
+  <button id="tes2" class="layui-btn">运行上述例子22</button>
+
+
+
+
+
+
+<script>
+!function(){
+
+for(var i = 1; i <= 6; i++){
+	new Function($('#hello'+ i).text())();
+}
+}();
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+var i = 0, len = jQuery('.adsbygoogle').length;
+for(; i < len; i++){
+  (adsbygoogle = window.adsbygoogle || []).push({});
+}
+(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: "ca-pub-6111334333458862",
+  enable_page_level_ads: true
+});
+</script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
